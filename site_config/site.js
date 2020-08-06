@@ -15,12 +15,7 @@ export default {
       {
         key: 'docs',
         text: 'DOCS',
-        link: '/en-us/docs/demo1.html',
-      },
-      {
-        key: 'blog',
-        text: 'BLOG',
-        link: '/en-us/blog/index.html',
+        link: 'https://arthas.gitee.io/',
       },
       {
         key: 'community',

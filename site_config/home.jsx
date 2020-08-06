@@ -3,8 +3,8 @@ import React from 'react';
 export default {
   'zh-cn': {
     brand: {
-      brandName: '开源产品品牌名称',
-      briefIntroduction: '关于开源产品的简单介绍',
+      brandName: 'Arthas',
+      briefIntroduction: 'Java应用诊断利器',
       buttons: [
         {
           text: '立即开始',
@@ -92,8 +92,8 @@ export default {
   },
   'en-us': {
     brand: {
-      brandName: 'brandName',
-      briefIntroduction: 'some description of product',
+      brandName: 'Arthas',
+      briefIntroduction: 'Java Diagnostic Tool',
       buttons: [
         {
           text: 'Quick Start',

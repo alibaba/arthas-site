@@ -58,15 +58,7 @@ export default {
         },
       ],
     },
-    start: {
-      title: '快速开始',
-      desc: '简单描述',
-      img: '/img/quick_start.png',
-      button: {
-        text: '阅读更多',
-        link: '/zh-cn/docs/demo1.html',
-      },
-    },
+
     users: {
       title: '用户',
       desc: <span>请在 <a rel="noopener noreferrer" target="_blank" href="https://github.com/alibaba/arthas/issues/111">Wanted: who&#39;s using arthas</a> 上提供信息来帮助Arthas做的更好。</span>,
@@ -135,15 +127,7 @@ export default {
         }
       ]
     },
-    start: {
-      title: 'Quick start',
-      desc: 'some description text',
-      img: '/img/quick_start.png',
-      button: {
-        text: 'READ MORE',
-        link: '/en-us/docs/demo1.html',
-      },
-    },
+
     users: {
       title: 'users',
       desc: <span>Providing your info on <a rel="noopener noreferrer" target="_blank" href="https://github.com/alibaba/arthas/issues/111">Wanted: who&#39;s using arthas</a> to help improving arthas better</span>,

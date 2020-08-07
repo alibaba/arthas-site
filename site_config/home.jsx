@@ -21,7 +21,7 @@ export default {
     introduction: {
       title: 'Java 应用诊断利器',
       desc: 'Arthas 是Alibaba开源的Java诊断工具，深受开发者喜爱。',
-      img: '/img/architecture.png',
+      img: '/img/dashboard.png',
     },
     features: {
       title: '特性一览',
@@ -94,7 +94,7 @@ export default {
     introduction: {
       title: 'introduction title',
       desc: 'some introduction of your product',
-      img: '/img/architecture.png',
+      img: '/img/dashboard.png',
     },
     features: {
       title: 'Feature List',

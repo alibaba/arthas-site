@@ -2,7 +2,7 @@
 export default {
   rootPath: '', // 发布到服务器的根目录，需以/开头但不能有尾/，如果只有/，请填写空字符串
   port: 8080, // 本地开发服务器的启动端口
-  domain: 'dubbo.apache.org', // 站点部署域名，无需协议和path等
+  domain: 'arthas.aliyun.com', // 站点部署域名，无需协议和path等
   defaultSearch: 'google', // 默认搜索引擎，baidu或者google
   defaultLanguage: 'en-us',
   'en-us': {
@@ -15,12 +15,12 @@ export default {
       {
         key: 'docs',
         text: 'DOCS',
-        link: 'https://arthas.gitee.io/',
+        link: 'https://arthas.aliyun.com/doc/en/',
       },
       {
         key: 'community',
         text: 'COMMUNITY',
-        link: '/en-us/community/index.html',
+        link: 'https://github.com/alibaba/arthas/issues',
       },
     ],
     disclaimer: {
@@ -32,15 +32,15 @@ export default {
       list: [
         {
           text: 'Overview',
-          link: '/en-us/docs/demo1.html',
+          link: 'https://arthas.aliyun.com/doc/en/',
         },
         {
           text: 'Quick start',
-          link: '/en-us/docs/demo2.html',
+          link: 'https://arthas.aliyun.com/doc/en/quick-start.html',
         },
         {
           text: 'Developer guide',
-          link: '/en-us/docs/dir/demo3.html',
+          link: 'https://github.com/alibaba/arthas/blob/master/CONTRIBUTING.md',
         },
       ],
     },
@@ -48,12 +48,12 @@ export default {
       title: 'Resources',
       list: [
         {
-          text: 'Blog',
-          link: '/en-us/blog/index.html',
+          text: 'User cases',
+          link: 'https://github.com/alibaba/arthas/issues?q=label%3Auser-case',
         },
         {
           text: 'Community',
-          link: '/en-us/community/index.html',
+          link: 'https://github.com/alibaba/arthas/issues',
         },
       ],
     },
@@ -69,17 +69,12 @@ export default {
       {
         key: 'docs',
         text: '文档',
-        link: '/zh-cn/docs/demo1.html',
-      },
-      {
-        key: 'blog',
-        text: '博客',
-        link: '/zh-cn/blog/index.html',
+        link: 'https://arthas.aliyun.com/doc/',
       },
       {
         key: 'community',
         text: '社区',
-        link: '/zh-cn/community/index.html',
+        link: 'https://github.com/alibaba/arthas/issues',
       },
     ],
     disclaimer: {

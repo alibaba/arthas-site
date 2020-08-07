@@ -13,6 +13,11 @@ export default {
         link: '/en-us/index.html',
       },
       {
+        key: 'tutorials',
+        text: 'ONLINE TUTORIALS',
+        link: 'https://arthas.aliyun.com/doc/arthas-tutorials.html?language=en',
+      },
+      {
         key: 'docs',
         text: 'DOCS',
         link: 'https://arthas.aliyun.com/doc/en/',
@@ -23,10 +28,6 @@ export default {
         link: 'https://github.com/alibaba/arthas/issues',
       },
     ],
-    disclaimer: {
-      title: 'Disclaimer',
-      content: 'the disclaimer content',
-    },
     documentation: {
       title: 'Documentation',
       list: [
@@ -48,6 +49,10 @@ export default {
       title: 'Resources',
       list: [
         {
+          text: 'Online TuTorials',
+          link: 'https://arthas.aliyun.com/doc/arthas-tutorials.html?language=en',
+        },
+        {
           text: 'User cases',
           link: 'https://github.com/alibaba/arthas/issues?q=label%3Auser-case',
         },
@@ -67,6 +72,11 @@ export default {
         link: '/zh-cn/index.html',
       },
       {
+        key: 'tutorials',
+        text: '在线教程',
+        link: 'https://arthas.aliyun.com/doc/arthas-tutorials.html?language=cn',
+      },
+      {
         key: 'docs',
         text: '文档',
         link: 'https://arthas.aliyun.com/doc/',
@@ -77,24 +87,20 @@ export default {
         link: 'https://github.com/alibaba/arthas/issues',
       },
     ],
-    disclaimer: {
-      title: '免责声明',
-      content: '免责声明的具体内容',
-    },
     documentation: {
       title: '文档',
       list: [
         {
           text: '概览',
-          link: '/zh-cn/docs/demo1.html',
+          link: 'https://arthas.aliyun.com/doc/',
         },
         {
           text: '快速开始',
-          link: '/zh-cn/docs/demo2.html',
+          link: 'https://arthas.aliyun.com/doc/quick-start.html',
         },
         {
           text: '开发者指南',
-          link: '/zh-cn/docs/dir/demo3.html',
+          link: 'https://github.com/alibaba/arthas/blob/master/CONTRIBUTING.md',
         },
       ],
     },
@@ -102,12 +108,16 @@ export default {
       title: '资源',
       list: [
         {
-          text: '博客',
-          link: '/zh-cn/blog/index.html',
+          text: '在线教程',
+          link: 'https://arthas.aliyun.com/doc/arthas-tutorials.html?language=cn',
+        },
+        {
+          text: '用户案例',
+          link: 'https://github.com/alibaba/arthas/issues?q=label%3Auser-case',
         },
         {
           text: '社区',
-          link: '/zh-cn/community/index.html',
+          link: 'https://github.com/alibaba/arthas/issues',
         },
       ],
     },

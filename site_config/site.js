@@ -23,6 +23,11 @@ export default {
         link: 'https://arthas.aliyun.com/doc/en/',
       },
       {
+        key: 'download',
+        text: 'DOWNLOAD',
+        link: 'https://arthas.aliyun.com/doc/en/download.html',
+      },
+      {
         key: 'community',
         text: 'COMMUNITY',
         link: 'https://github.com/alibaba/arthas/issues',
@@ -49,12 +54,16 @@ export default {
       title: 'Resources',
       list: [
         {
-          text: 'Online TuTorials',
+          text: 'Online Tutorials',
           link: 'https://arthas.aliyun.com/doc/arthas-tutorials.html?language=en',
         },
         {
           text: 'User cases',
           link: 'https://github.com/alibaba/arthas/issues?q=label%3Auser-case',
+        },
+        {
+          text: 'Download',
+          link: 'https://arthas.aliyun.com/doc/en/download.html',
         },
         {
           text: 'Community',
@@ -80,6 +89,11 @@ export default {
         key: 'docs',
         text: '文档',
         link: 'https://arthas.aliyun.com/doc/',
+      },
+      {
+        key: 'download',
+        text: '下载',
+        link: 'https://arthas.aliyun.com/doc/download.html',
       },
       {
         key: 'community',
@@ -114,6 +128,10 @@ export default {
         {
           text: '用户案例',
           link: 'https://github.com/alibaba/arthas/issues?q=label%3Auser-case',
+        },
+        {
+          text: '下载',
+          link: 'https://arthas.aliyun.com/doc/download.html',
         },
         {
           text: '社区',

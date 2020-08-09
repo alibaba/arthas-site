@@ -21,6 +21,7 @@ jobs:
       run: |
         npm install && npm run build && mkdir deploy-dist && cp -R zh-cn/ en-us/ build/ img/ md_json/ deploy-dist/ && mv *.html deploy-dist/
         curl -#Lk  -o /tmp/arthas.zip https://arthas.aliyun.com/download/latest_version && unzip /tmp/arthas.zip -d /tmp/arthas && cp /tmp/arthas/as.sh /tmp/arthas/arthas-boot.jar /tmp/arthas/arthas-demo.jar deploy-dist/
+        cp arthas_files/install.sh deploy-dist/
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.4.0
       env:

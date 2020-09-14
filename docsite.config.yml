@@ -3,14 +3,14 @@ pages:
  home:
   # 首页配置
   zh-cn:
-   title: '网页标签title'
-   keywords: '关键词1，关键词2'
-   description: '页面内容简介'
+   title: 'Arthas 应用诊断利器'
+   keywords: 'Arthas，Java，JVM，诊断，利器'
+   description: '阿里巴巴开源的应用诊断利器Arthas'
   # home config
   en-us:
-   title: 'page title'
-   keywords: 'keyword1,keyword2'
-   description: 'page description'
+   title: 'Arthas - Alibaba Java Diagnostic Tool '
+   keywords: 'Arthas,Java,JVM,Diagnostic'
+   description: 'Alibaba Java Diagnostic Tool Arthas'
  community:
   # 社区页配置
   zh-cn:

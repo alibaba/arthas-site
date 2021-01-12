@@ -8,10 +8,10 @@
 
 # program : Arthas
 #  author : Core Engine @ Taobao.com
-#    date : 2020-12-02
+#    date : 2021-01-11
 
 # current arthas script version
-ARTHAS_SCRIPT_VERSION=3.4.5
+ARTHAS_SCRIPT_VERSION=3.4.6
 
 # SYNOPSIS
 #   rreadlink <fileOrDirPath>
@@ -438,7 +438,7 @@ EXAMPLES:
   ./as.sh --stat-url 'http://192.168.10.11:8080/api/stat'
   ./as.sh -c 'sysprop; thread' <pid>
   ./as.sh -f batch.as <pid>
-  ./as.sh --use-version 3.4.5
+  ./as.sh --use-version 3.4.6
   ./as.sh --session-timeout 3600
   ./as.sh --attach-only
   ./as.sh --select arthas-demo
@@ -710,7 +710,7 @@ parse_arguments()
     fi
 
     # check pid
-    if [ -z ${TARGET_PID} ] && [ ${BATCH_MODE} = false ]; then
+    if [ -z ${TARGET_PID} ]; then
         # interactive mode
         local IFS=$'\n'
         CANDIDATES=($(call_jps | grep -v sun.tools.jps.Jps | awk '{print $0}'))

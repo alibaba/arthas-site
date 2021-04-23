@@ -31,9 +31,27 @@ class Home extends Language {
         });
       }
     });
+
+    fetch('https://arthas.aliyun.com/api/starCount')
+    .then(res => res.text())
+    .then((data) => {
+        this.setState({
+          starCount: data
+        });
+    });
+
+    fetch('https://arthas.aliyun.com/api/forkCount')
+    .then(res => res.text())
+    .then((data) => {
+        this.setState({
+          forkCount: data
+        });
+    });
   }
 
   render() {
+    const { starCount } = this.state;
+    const { forkCount } = this.state;
     const language = this.getLanguage();
     const dataSource = homeConfig[language];
     const { headerType } = this.state;
@@ -57,6 +75,20 @@ class Home extends Language {
             {
               dataSource.brand.buttons.map(b => <Button type={b.type} key={b.type} link={b.link} target={b.target}>{b.text}</Button>)
             }
+            </div>
+            <div className="github-buttons">
+                <a href="https://github.com/alibaba/arthas" target="_blank" rel="noopener noreferrer">
+                    <div className="star">
+                        <img src="https://img.alicdn.com/tfs/TB1FlB1JwHqK1RjSZFPXXcwapXa-32-32.png" />
+                        <span className="count">{starCount}</span>
+                    </div>
+                </a>
+                <a href="https://github.com/alibaba/arthas/fork" target="_blank" rel="noopener noreferrer">
+                    <div className="fork">
+                        <img src="https://img.alicdn.com/tfs/TB1zbxSJwDqK1RjSZSyXXaxEVXa-32-32.png" />
+                        <span className="count">{forkCount}</span>
+                    </div>
+                </a>
             </div>
           </div>
           <div className="animation animation1" />

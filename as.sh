@@ -8,10 +8,10 @@
 
 # program : Arthas
 #  author : Core Engine @ Taobao.com
-#    date : 2021-03-09
+#    date : 2021-05-13
 
 # current arthas script version
-ARTHAS_SCRIPT_VERSION=3.5.0
+ARTHAS_SCRIPT_VERSION=3.5.1
 
 # SYNOPSIS
 #   rreadlink <fileOrDirPath>
@@ -159,9 +159,6 @@ BATCH_MODE=false
 # define arthas's temp dir
 TMP_DIR=/tmp
 
-# last update arthas version
-ARTHAS_VERSION=
-
 # arthas remote url
 # https://arthas.aliyun.com/download/3.1.7?mirror=aliyun
 REMOTE_DOWNLOAD_URL="https://arthas.aliyun.com/download/PLACEHOLDER_VERSION?mirror=PLACEHOLDER_REPO"
@@ -235,6 +232,7 @@ check_permission()
 # reset some options for env
 reset_for_env()
 {
+    unset JAVA_TOOL_OPTIONS
 
     # init ARTHAS' lib
     mkdir -p "${ARTHAS_LIB_DIR}" \
@@ -448,10 +446,10 @@ EXAMPLES:
   ./as.sh --stat-url 'http://192.168.10.11:8080/api/stat'
   ./as.sh -c 'sysprop; thread' <pid>
   ./as.sh -f batch.as <pid>
-  ./as.sh --use-version 3.5.0
+  ./as.sh --use-version 3.5.1
   ./as.sh --session-timeout 3600
   ./as.sh --attach-only
-  ./as.sh --select arthas-demo
+  ./as.sh --select math-game
   ./as.sh --repo-mirror aliyun --use-http
 WIKI:
   https://arthas.aliyun.com/doc
@@ -831,7 +829,7 @@ attach_jvm()
         tempArgs+=("${USERNAME}")
     fi
 
-        if [ "${PASSWORD}" ]; then
+    if [ "${PASSWORD}" ]; then
         tempArgs+=("-password")
         tempArgs+=("${PASSWORD}")
     fi

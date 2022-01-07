@@ -24,7 +24,7 @@ jobs:
         cp /tmp/arthas/math-game.jar deploy-dist/ 2>/dev/null || :
         cp /tmp/arthas/arthas-demo.jar deploy-dist/ 2>/dev/null || :
         cp /tmp/arthas/as.sh /tmp/arthas/arthas-boot.jar deploy-dist/
-        cp arthas_files/install.sh deploy-dist/ 
+        cp arthas_files/install.sh deploy-dist/
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.4.0
       env:
